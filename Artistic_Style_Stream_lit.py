@@ -24,7 +24,7 @@ import scipy as sc
 st.title("Artistic Style Similarity")
 
 # specify your directory
-directory_path = 'images-by-style'
+directory_path = '/Users/praneethkorukonda/Desktop/Assingment-3/images-by-style'
 
 # Use the directory_path in the glob function
 image_paths = glob.glob(f'{directory_path}/*.jpg')
@@ -178,11 +178,11 @@ def search_similar_images(user_uploaded_image, image_style_embeddings, images, m
 
     sorted_neighbors = sorted(distances.items(), key=lambda x: x[1])
 
-    st.write("Most similar images:")
+    st.write("10 of the most similar images:")
     for i, (image_path, distance) in enumerate(sorted_neighbors[:max_results]):
         st.image(images[image_path], caption=f"Distance: {distance}", use_column_width=True)
 
-st.title("Image Style Search")
-user_image = st.file_uploader("Upload your image:", type=["jpg", "jpeg", "png"])
+st.title("Artistic Style Image Search")
+user_image = st.file_uploader("Upload the image which you you to check:", type=["jpg", "jpeg", "png"])
 if user_image:
     search_similar_images(user_image, image_style_embeddings, images)
