@@ -21,13 +21,10 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn import manifold
 import scipy as sc
 
-
-
 st.title("Artistic Style Similarity")
 
-
 # specify your directory
-directory_path = '/Users/praneethkorukonda/Desktop/Assingment3/images-by-style'
+directory_path = 'images-by-style'
 
 # Use the directory_path in the glob function
 image_paths = glob.glob(f'{directory_path}/*.jpg')
