@@ -21,7 +21,7 @@ warnings.simplefilter("ignore")
 
 (x_train, y_train), (x_test, y_test) = tf.keras.datasets.fashion_mnist.load_data()
 
-TRAIN_BUF = 60000
+TRAIN_BUF = 10000
 BATCH_SIZE = 512
 DIMS = (28, 28, 1)
 N_TRAIN_BATCHES = int(TRAIN_BUF/BATCH_SIZE)
