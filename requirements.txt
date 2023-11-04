@@ -193,5 +193,5 @@ widgetsnbextension==4.0.9
 wrapt==1.14.1
 xgboost==1.7.3
 yarl==1.9.2
+opencv-python-headless
 zipp==3.17.0
-opencv-python
