@@ -16,9 +16,10 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn import manifold
 import scipy as sc
 
+# Add a title to your Streamlit app
+st.title("Image Style Similarity Search")
 
-
-image_paths = glob.glob('/Users/praneethkorukonda/Desktop/Assingment3/tensor-house-data/search/images-by-style/*.jpg')
+image_paths = glob.glob('/workspaces/demo/images-by-style/*.jpg')
 print(f'Found [{len(image_paths)}] images')
 
 

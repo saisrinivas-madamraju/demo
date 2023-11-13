@@ -3,7 +3,8 @@ import tensorflow as tf
 from PIL import Image
 import numpy as np
 
-st.title('Clothes Classification')
+
+st.title('Similarity Search')
 
 # Load the model
 model = tf.keras.models.load_model('vs_similarity.h5')
